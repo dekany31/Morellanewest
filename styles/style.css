@@ -5,11 +5,10 @@
           box-sizing: border-box;
 }
 
-* {
+/* * {
   border: 1px dotted red;
-  padding: 2px;
-}
-
+  padding: 2px; 
+}*/
 body {
   background-color: rgba(219, 160, 84, 0.829);
   height: 100vh;
@@ -24,13 +23,13 @@ body .burger {
   margin: 20px;
   color: rgba(219, 160, 84, 0.829);
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: -10px;
+  top: -10px;
 }
 
 body .flexbox {
   border: 1px solid white;
-  margin: 30px 30px 0;
+  margin: 40px 40px 0;
   height: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,8 +41,9 @@ body .flexbox {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  line-height: 2em;
+  line-height: 3em;
   padding: 30px;
+  font-size: 20px;
 }
 
 body .flexbox .down {
@@ -54,5 +54,23 @@ body .morella {
   border: 1px solid white;
   color: rgba(219, 160, 84, 0.829);
   background-color: white;
+  margin: 0 40px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 0 0 10px 10px;
+}
+
+@media (max-width: 800px) {
+  body .flexbox {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 2em;
+  }
+  body .flexbox p {
+    text-align: center;
+  }
+  body .morella {
+    font-size: 3em;
+  }
 }
 /*# sourceMappingURL=style.css.map */

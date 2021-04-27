@@ -11,3 +11,17 @@
   border: 1px dotted red;
   padding: 2px;
 }
+body {
+  background-color: burlywood;
+  .burger {
+    background-color: white;
+    font-size: 5em;
+    border-radius: 50%;
+    padding: 0 15px;
+    margin: 20px;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+}

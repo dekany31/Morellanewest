@@ -19,7 +19,8 @@ IF %mod% == 0 (
     echo  "No: %index% commit. this is a 20mins auto commit. %date% - %time%" >> Autocommit.log
 
     rem wait/sleep  for the next commit
-    sleep %interval%
+    rem sleep %interval%
+    ping localhost -n %interval% >nul
 
     rem "commiting..."
     git status

@@ -11,18 +11,48 @@
 }
 
 body {
-  background-color: burlywood;
+  background-color: rgba(219, 160, 84, 0.829);
+  height: 100vh;
+  color: white;
 }
 
 body .burger {
   background-color: white;
   font-size: 5em;
   border-radius: 50%;
-  padding: 0 15px;
+  padding: 2px 5px;
   margin: 20px;
-  color: white;
+  color: rgba(219, 160, 84, 0.829);
   position: absolute;
   right: 20px;
   top: 20px;
+}
+
+body .flexbox {
+  border: 1px solid white;
+  margin: 30px 30px 0;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 2em;
+  padding: 30px;
+}
+
+body .flexbox .down {
+  text-align: right;
+}
+
+body .morella {
+  border: 1px solid white;
+  color: rgba(219, 160, 84, 0.829);
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */
